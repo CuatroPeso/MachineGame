@@ -1,0 +1,22 @@
+business:
+  objectives:
+    - Construir un dataset limpio y documentado a partir de 3 fuentes de videojuegos.
+    - Identificar variables potencialmente útiles para modelado (ventas / popularidad / uso).
+  questions:
+    - ¿Qué géneros y plataformas muestran mayor tracción?
+    - ¿Cómo se distribuyen las horas jugadas/acciones en Steam?
+    - ¿Qué variables podrían explicar las ventas por región?
+  success_metrics:
+    - Datasets limpios en data/03_primary/
+    - Reportes EDA en data/08_reporting/
+    - Notebook por fase (1 a 3)
+
+paths:
+  games_raw: "data/01_raw/Games.csv"
+  steam_raw: "data/01_raw/steam-200k.csv"
+  vg_sales_raw: "data/01_raw/Video_Games_Sales_as_at_22_Dec_2016.csv"
+
+prep:
+  drop_duplicates: true
+  drop_all_null_cols: true
+  fillna_strategy: "zero"     # opciones demo: "zero" | "median"

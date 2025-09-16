@@ -1,0 +1,9 @@
+seccion,item
+Objetivos,Construir un dataset limpio y documentado a partir de 3 fuentes de videojuegos.
+Objetivos,Identificar variables potencialmente útiles para modelado (ventas / popularidad / uso).
+Preguntas de Negocio,¿Qué géneros y plataformas muestran mayor tracción?
+Preguntas de Negocio,¿Cómo se distribuyen las horas jugadas/acciones en Steam?
+Preguntas de Negocio,¿Qué variables podrían explicar las ventas por región?
+Métricas de Éxito,Datasets limpios en data/03_primary/
+Métricas de Éxito,Reportes EDA en data/08_reporting/
+Métricas de Éxito,Notebook por fase (1 a 3)

@@ -1,0 +1,78 @@
+# --- RAW
+games_raw:
+  type: pandas.CSVDataset
+  filepath: data/01_raw/Games.csv
+
+steam_raw:
+  type: pandas.CSVDataset
+  filepath: data/01_raw/steam-200k.csv
+
+vg_sales_raw:
+  type: pandas.CSVDataset
+  filepath: data/01_raw/Video_Games_Sales_as_at_22_Dec_2016.csv
+
+# --- REPORTES 
+business_report:
+  type: pandas.CSVDataset
+  filepath: data/08_reporting/business_understanding.csv
+  load_args: { encoding: "utf-8" }
+  save_args: { index: false, encoding: "utf-8" }
+
+dataset_inventory:
+  type: pandas.CSVDataset
+  filepath: data/08_reporting/dataset_inventory.csv
+  load_args: { encoding: "utf-8" }
+  save_args: { index: false, encoding: "utf-8" }
+
+eda_summary:
+  type: pandas.CSVDataset
+  filepath: data/08_reporting/eda_summary.csv
+  load_args: { encoding: "utf-8" }
+  save_args: { index: false, encoding: "utf-8" }
+
+games_describe:
+  type: pandas.CSVDataset
+  filepath: data/08_reporting/games_describe.csv
+  load_args: { encoding: "utf-8" }
+  save_args: { index: false, encoding: "utf-8" }
+
+steam_describe:
+  type: pandas.CSVDataset
+  filepath: data/08_reporting/steam_describe.csv
+  load_args: { encoding: "utf-8" }
+  save_args: { index: false, encoding: "utf-8" }
+
+vg_sales_describe:
+  type: pandas.CSVDataset
+  filepath: data/08_reporting/vg_sales_describe.csv
+  load_args: { encoding: "utf-8" }
+  save_args: { index: false, encoding: "utf-8" }
+
+
+
+
+# --- PRIMARY (clean)
+games_clean:
+  type: pandas.ParquetDataset
+  filepath: data/03_primary/games_clean.parquet
+
+steam_clean:
+  type: pandas.ParquetDataset
+  filepath: data/03_primary/steam_clean.parquet
+
+vg_sales_clean:
+  type: pandas.ParquetDataset
+  filepath: data/03_primary/vg_sales_clean.parquet
+
+# --- PREPARED (con features)
+games_prepared:
+  type: pandas.ParquetDataset
+  filepath: data/05_model_input/games_prepared.parquet
+
+steam_prepared:
+  type: pandas.ParquetDataset
+  filepath: data/05_model_input/steam_prepared.parquet
+
+vg_sales_prepared:
+  type: pandas.ParquetDataset
+  filepath: data/05_model_input/vg_sales_prepared.parquet

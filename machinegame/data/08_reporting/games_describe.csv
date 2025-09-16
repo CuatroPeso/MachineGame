@@ -1,0 +1,5 @@
+dataset,columna,count,unique,top,freq,mean,std,min,25%,50%,75%,max
+data/01_raw/Games.csv,Console,14801,139,PC,4182,,,,,,,
+data/01_raw/Games.csv,GameName,14801,11256,Open Season Review,9,,,,,,,
+data/01_raw/Games.csv,Review,14801,11,Good,4118,,,,,,,
+data/01_raw/Games.csv,Score,14801.0,,,,6.429498006891427,1.6117533085790834,1.0,6.0,7.0,8.0,9.0
