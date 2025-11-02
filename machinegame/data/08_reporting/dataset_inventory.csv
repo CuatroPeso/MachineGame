@@ -1,0 +1,4 @@
+dataset,filepath,exists,size_bytes,sample_columns
+games_raw,data\01_raw\Games.csv,False,0,
+steam_raw,data\01_raw\steam-200k.csv,False,0,
+vg_sales_raw,data\01_raw\Video_Games_Sales_as_at_22_Dec_2016.csv,False,0,

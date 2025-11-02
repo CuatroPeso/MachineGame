@@ -1,0 +1,6 @@
+dataset,columna,count,unique,top,freq,mean,std,min,25%,50%,75%,max
+data/01_raw/steam-200k.csv,151603712,199999.0,,,,103655626.20621103,72080835.59467606,5250.0,47384202.0,86912006.0,154230933.0,309903146.0
+data/01_raw/steam-200k.csv,The Elder Scrolls V Skyrim,199999,5155,Dota 2,9682,,,,,,,
+data/01_raw/steam-200k.csv,purchase,199999,2,purchase,129510,,,,,,,
+data/01_raw/steam-200k.csv,1.0,199999.0,,,,17.874468372341862,138.0572916399094,0.1,1.0,1.0,1.3,11754.0
+data/01_raw/steam-200k.csv,0,199999.0,,,,0.0,0.0,0.0,0.0,0.0,0.0,0.0

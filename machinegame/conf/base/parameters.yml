@@ -1,0 +1,30 @@
+# =======================
+# parameters.yml (CORRECTO)
+# =======================
+
+# ---------- REGRESIÓN ----------
+reg:
+  cv:
+    n_splits: 3
+    shuffle: true
+    random_state: 42
+  # Puedes dejar grids vacíos; igual ejecuta con defaults del código
+  grid: {}
+reg_metric: r2
+
+# ---------- CLASIFICACIÓN ----------
+cls:
+  cv:
+    n_splits: 3
+    shuffle: true
+    random_state: 42
+  grid: {}
+cls_metric: f1_macro
+
+# ---------- CONFIG COMÚN DEL MODELO ----------
+model:
+  test_size: 0.2
+  random_state: 42
+  stratify: true          # sólo aplica en clasificación
+  target_reg: Critic_Score  # <-- AJUSTA al nombre real de tu target numérico
+  target_cls: Rating        # <-- AJUSTA al nombre real de tu target categórico

@@ -1,0 +1,17 @@
+dataset,columna,count,unique,top,freq,mean,std,min,25%,50%,75%,max
+data/01_raw/Video_Games_Sales_as_at_22_Dec_2016.csv,Name,16717,11562,Need for Speed: Most Wanted,12,,,,,,,
+data/01_raw/Video_Games_Sales_as_at_22_Dec_2016.csv,Platform,16719,31,PS2,2161,,,,,,,
+data/01_raw/Video_Games_Sales_as_at_22_Dec_2016.csv,Year_of_Release,16450.0,,,,2006.4873556231003,5.8789947683483215,1980.0,2003.0,2007.0,2010.0,2020.0
+data/01_raw/Video_Games_Sales_as_at_22_Dec_2016.csv,Genre,16717,12,Action,3370,,,,,,,
+data/01_raw/Video_Games_Sales_as_at_22_Dec_2016.csv,Publisher,16665,582,Electronic Arts,1356,,,,,,,
+data/01_raw/Video_Games_Sales_as_at_22_Dec_2016.csv,NA_Sales,16719.0,,,,0.2633303427238471,0.8135138347516191,0.0,0.0,0.08,0.24,41.36
+data/01_raw/Video_Games_Sales_as_at_22_Dec_2016.csv,EU_Sales,16719.0,,,,0.14502482205873557,0.5032832960942158,0.0,0.0,0.02,0.11,28.96
+data/01_raw/Video_Games_Sales_as_at_22_Dec_2016.csv,JP_Sales,16719.0,,,,0.07760212931395417,0.3088180805146378,0.0,0.0,0.0,0.04,10.22
+data/01_raw/Video_Games_Sales_as_at_22_Dec_2016.csv,Other_Sales,16719.0,,,,0.04733177821640051,0.18670989698947893,0.0,0.0,0.01,0.03,10.57
+data/01_raw/Video_Games_Sales_as_at_22_Dec_2016.csv,Global_Sales,16719.0,,,,0.5335426759973684,1.5479351247177668,0.01,0.06,0.17,0.47,82.53
+data/01_raw/Video_Games_Sales_as_at_22_Dec_2016.csv,Critic_Score,8137.0,,,,68.96767850559173,13.938164552843213,13.0,60.0,71.0,79.0,98.0
+data/01_raw/Video_Games_Sales_as_at_22_Dec_2016.csv,Critic_Count,8137.0,,,,26.360820941378886,18.980494534582068,3.0,12.0,21.0,36.0,113.0
+data/01_raw/Video_Games_Sales_as_at_22_Dec_2016.csv,User_Score,7590.0,,,,7.125046113306982,1.5000060936257982,0.0,6.4,7.5,8.2,9.7
+data/01_raw/Video_Games_Sales_as_at_22_Dec_2016.csv,User_Count,7590.0,,,,162.22990777338603,561.2823262473771,4.0,10.0,24.0,81.0,10665.0
+data/01_raw/Video_Games_Sales_as_at_22_Dec_2016.csv,Developer,10096,1696,Ubisoft,204,,,,,,,
+data/01_raw/Video_Games_Sales_as_at_22_Dec_2016.csv,Rating,9950,8,E,3991,,,,,,,
