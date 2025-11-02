@@ -1,0 +1,8 @@
+kedro>=0.19
+kedro-datasets[pandas,parquet]>=3.0
+pandas>=2.1
+numpy>=1.26
+scikit-learn>=1.5
+pyarrow>=15
+dvc[ssh,s3,gdrive]==3.*
+matplotlib>=3.8

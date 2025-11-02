@@ -1,0 +1,33 @@
+version: "3.8"
+
+services:
+  airflow:
+    build:
+      context: ./airflow
+      dockerfile: Dockerfile
+    container_name: airflow_kedro
+    restart: unless-stopped
+    environment:
+      AIRFLOW__CORE__EXECUTOR: LocalExecutor
+      AIRFLOW__CORE__LOAD_EXAMPLES: "false"
+      AIRFLOW__SCHEDULER__CATCHUP_BY_DEFAULT: "false"
+      AIRFLOW__CORE__DAGS_ARE_PAUSED_AT_CREATION: "false"
+      AIRFLOW__WEBSERVER__RBAC: "true"
+      _AIRFLOW_WWW_USER_USERNAME: admin
+      _AIRFLOW_WWW_USER_PASSWORD: admin
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./airflow/dags:/opt/airflow/dags
+      - ./:/opt/airflow/project
+      - ./dvcstore:/opt/airflow/dvcstore
+    working_dir: /opt/airflow
+    command: >
+      bash -lc "
+        airflow db migrate &&
+        airflow users create
+          --username ${_AIRFLOW_WWW_USER_USERNAME:-admin}
+          --password ${_AIRFLOW_WWW_USER_PASSWORD:-admin}
+          --firstname Admin --lastname User --role Admin --email admin@example.com || true &&
+        airflow scheduler & airflow webserver
+      "

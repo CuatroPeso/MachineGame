@@ -1,0 +1,35 @@
+﻿stages:
+  prep:
+    cmd: kedro run --pipeline data_preparation
+    deps:
+      - src
+      - conf/base/catalog.yml
+      - conf/base/parameters.yml
+      - data/01_raw/Games.csv
+      - data/01_raw/steam-200k.csv
+      - data/01_raw/Video_Games_Sales_as_at_22_Dec_2016.csv
+    outs:
+      - data/04_feature/model_input_regression.parquet
+      - data/04_feature/model_input_classification.parquet
+
+  reg:
+    cmd: kedro run --pipeline modeling_regression
+    deps:
+      - src
+      - conf/base/catalog.yml
+      - conf/base/parameters.yml
+      - data/04_feature/model_input_regression.parquet
+    outs:
+      - data/06_models/regression
+      - data/08_reporting/regression_report.csv
+
+  cls:
+    cmd: kedro run --pipeline modeling_classification
+    deps:
+      - src
+      - conf/base/catalog.yml
+      - conf/base/parameters.yml
+      - data/04_feature/model_input_classification.parquet
+    outs:
+      - data/06_models/classification
+      - data/08_reporting/classification_report.csv
